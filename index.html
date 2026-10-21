@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#b3261e">
+<title>คู่มือเอาตัวรอด — ช่วยชีวิตทีละขั้น</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#/">📕 คู่มือเอาตัวรอด</a>
+  <a class="call-now" href="tel:1669">📞 โทร 1669</a>
+</header>
+
+<main id="app"></main>
+
+<button id="panicBtn" class="panic-fab" aria-label="โหมดตื่นตระหนก">🆘 ใจสั่น ทำอะไรดี</button>
+
+<div id="panic" class="panic" hidden>
+  <button class="panic-close" id="panicClose" aria-label="ปิด">✕</button>
+  <div class="panic-inner">
+    <h2>หยุดก่อน หายใจกับฉัน</h2>
+    <div class="breath"><div class="breath-circle" id="breathCircle"></div><div class="breath-text" id="breathText">พร้อม</div></div>
+    <p class="calm" id="calmLine"></p>
+    <ol class="panic-steps">
+      <li>กดโทร <a href="tel:1669"><b>1669</b></a> เดี๋ยวนี้</li>
+      <li>พูดว่า <b>“มีคนเป็นอะไร ที่ไหน”</b></li>
+      <li>ทำตามเสียงในสาย <b>อย่าวางก่อน</b></li>
+    </ol>
+    <div class="panic-actions">
+      <a class="btn big red" href="tel:1669">📞 โทร 1669</a>
+      <a class="btn big" href="#/script" id="panicScript">🗣️ เปิดบทพูด</a>
+    </div>
+  </div>
+</div>
+
+<footer class="foot">
+  คู่มือนี้เป็นข้อมูลเบื้องต้น ไม่ใช่การรักษาแทนแพทย์ — ในภาวะฉุกเฉินให้โทร <b>1669</b> ก่อนเสมอ<br>
+  ควรให้ผู้เชี่ยวชาญตรวจทานเนื้อหาก่อนเผยแพร่จริง · แนะนำเรียนอบรม CPR/AED กับสภากาชาดไทยหรือโรงพยาบาลใกล้บ้าน
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
