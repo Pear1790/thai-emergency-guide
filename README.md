@@ -2,6 +2,8 @@
 
 A mobile-first, offline-ready web app that walks a bystander through an emergency **one step at a time**, in Thai.
 
+![Screenshot](screenshot.png)
+
 **▶ Live demo:** https://pear1790.github.io/thai-emergency-guide/
 
 ## Features
